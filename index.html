@@ -4,24 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.html">
+    <link rel="stylesheet" href="./styles.css">
     <title>DOM Exercise 4</title>
 </head>
 <body>
 <div class="form-container">
     <form class="form" action="#" method="GET">
-        <label for="count">How many?</label>
-        <input type="number" id="count" name="count">
-        <label for="type">Which coin?</label>
-        <select id="type" name="type">
-            <option value="penny">Penny</option>
-            <option value="nickel">Nickel</option>
-            <option value="dime">Dime</option>
-            <option value="quarter">Quarter</option>
-        </select>
+        <div>
+            <label for="howMany">How many?</label>
+            <input type="number" id="howMany" name="howMany">
+        </div>
+        <div>
+            <label for="selectedCoin">Which coin?</label>
+            <select id="selectedCoin" name="selectedCoin">
+                <option class ="penny" value="1">Penny</option>
+                <option class="nickel" value="5">Nickel</option>
+                <option class="dime" value="10">Dime</option>
+                <option class="quarter" value="25">Quarter</option>
+            </select>
+        </div>
         <button type="submit">Make Money!</button>
-    </form>
-    
+    </form>   
+</div>
+<div class="circle-container">
+    <!--<div class="penny-circle coins">Penny</div>
+    <div class="nickel-circle coins">Nickel</div>
+    <div class="dime-circle coins">Dime</div>
+    <div class="quarter-circle coins">Quarter</div>-->
+
+
 </div>
 
     <script src="./script.js" type="text/javascript"></script>
